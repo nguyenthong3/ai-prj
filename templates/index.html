@@ -12,7 +12,11 @@
 </p>
 {% if filename %}
 <div>
-    <img src="{{ url_for('display_image', filename=filename) }}">
+    <h2>Age: {{ age }}</h2>
+    <h2>Gender: {{ gender }}</h2>
+    <div>
+        <img src="{{ url_for('display_image', filename=filename) }}">
+    </div>
 </div>
 {% endif %}
 <form method="post" action="/" enctype="multipart/form-data">
